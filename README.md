@@ -1,9 +1,11 @@
-Documentação API
+#Documentação API
+As instruções a seguir são para a API que gerencia informações sobre Pessoa, Endereço e Eletrodoméstico.
+
 Pessoa
-API para gestão de pessoas.
+API para gerenciamento de pessoas.
 
 GET /pessoa/{id}
-Busca uma pessoa pelo id.
+Retorna uma pessoa pelo id.
 
 Parâmetros
 
@@ -22,7 +24,7 @@ Copy code
   "sexo": "MASCULINO"
 }
 PUT /pessoa/{id}
-Atualiza os dados de uma pessoa.
+Atualiza as informações de uma pessoa.
 
 Parâmetros
 
@@ -43,16 +45,16 @@ Resposta
 
 Código 200: A pessoa foi atualizada com sucesso.
 DELETE /pessoa/{id}
-Apaga uma pessoa pelo id.
+Deleta uma pessoa pelo id.
 
 Parâmetros
 
 id: integer($int64) - Identificador único da pessoa.
 Resposta
 
-Código 200: A pessoa foi apagada com sucesso.
+Código 200: A pessoa foi deletada com sucesso.
 GET /pessoa
-Busca todas as pessoas.
+Retorna todas as pessoas.
 
 Resposta
 
@@ -89,7 +91,7 @@ Resposta
 Código 200: A pessoa foi adicionada com sucesso.
 Endereço
 GET /enderecos/{id}
-Busca um endereço pelo id.
+Retorna um endereço pelo id.
 
 Parâmetros
 
@@ -108,7 +110,7 @@ Copy code
   "estado": "string"
 }
 PUT /enderecos/{id}
-Atualiza os dados de um endereço.
+Atualiza as informações de um endereço.
 
 Parâmetros
 
@@ -128,13 +130,3 @@ Copy code
 Resposta
 
 Código 200: O endereço foi atualizado com sucesso.
-DELETE /enderecos/{id}
-Apaga um endereço pelo id.
-
-Parâmetros
-
-id: integer($int64) - Identificador único do endereço.
-
-
-
-
